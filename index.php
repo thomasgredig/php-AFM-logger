@@ -12,9 +12,9 @@
 		$modeID = $_POST['modeID'];
 		$description = $_POST['description'];
 
-		$query= "INSERT INTO `sample` (`ID`, `name`, `tip`, `newTip`, `modeID`, `description`, `date_created`) " .
+		$query= "INSERT INTO `sample` (`ID`, `name`, `tip`, `newTip`, `modeID`, `userID`, `machineID`, `description`, `date_created`) " .
 		"VALUES (NULL, '" . $sampleName . "', '" . $tip . "', '" . $newTip . "', '" . $modeID.
-		"', '" . $description . "', CURRENT_TIMESTAMP);";
+		"', '" . getUserID() . "', '1', '". $description . "', CURRENT_TIMESTAMP);";
 		$result = $mysqli->query($query) or die($mysqli->error.__LINE__);
 		if ($result) $errorMsg = "<p>Sample added.</p>";
 	}
