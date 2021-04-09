@@ -1,6 +1,8 @@
 # php-AFM-logger
 
-Simple logging script for Atomic Force Microscope
+**Purpose:** Simple time logging script for multi-user atomic force microscope (AFM). This tool can be installed to record the total amount of instrument usage, sample logging, and cantilever tip management.
+
+**Requirements:** MySQL database, and PHP webserver.
 
 
 ## Install
