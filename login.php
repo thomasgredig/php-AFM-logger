@@ -59,7 +59,7 @@
     <div id="container">
       <header>
         <div class="container">
-          <h1>AFM Logger</h1>
+          <h1><?php echo $MSG_AFMheader; ?></h1>
 				</div>
       </header>
       <main>
@@ -75,7 +75,7 @@
 	    	</div>
     	</main>
 
-		<?php include "base/footer.php"; ?>
+		
 	</div>
 </body>
 </html>
